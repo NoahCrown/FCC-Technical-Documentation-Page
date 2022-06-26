@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+/* Navbar  */
+#navbar {
+    width: 20%;
+    height: 100vh;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    position: fixed;
+    max-width: 280px;
+    min-width: 240px;
+
+    
+
+}
+
+
+#navbar ul {
+    height: 90%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+
+#navbar>header {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.8rem 1rem;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+    color: #5A5B60;
+    margin: 1rem 0;
+    border-top: 1px solid rgba(0, 22, 22, 0.4);
+    display: block;
+    text-indent: 25px;
+    padding-top: .7rem;
+    font-weight: 500;
+    margin-top: 1px;
+
+}
+
+
+a[class="nav-link"] {
+    color: unset;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Main Content  */
+#main-doc {
+    margin-left: 17rem;
+    
+    width: 80%;
+    padding: 1rem;
+    color: #4d4e53;
+
+}
+
+.main-section {
+    padding: 1rem;
+}
+
+main header {
+    font-size: 1.8rem;
+    color: black !important;
+}
+
+p {
+    padding-left: 1rem;
+
+}
+
+article>ul {
+    padding-left: 5rem;
+
+}
+
+article>ul>li,
+p,
+main header,.nested-list > li {
+    margin-bottom: 1rem;
+}
+
+p,
+article>ul>li {
+    font-size: .975rem;
+}
+
+code {
+    margin-left: 3rem;
+    padding: 1rem;
+    background-color: #F7F7F7;
+    display: block;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+    text-align: left;
+    white-space: pre-line;
+    word-break: normal;
+    line-height: 2;
+    color: #4d4e53;
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+
+}
+
+.nested-list{
+    margin-left: 4rem;
+}
+
+
+/* Media Queries  */
+@media only screen and (max-width: 525px) and (max-width:1245px) {
+    #navbar{
+        height: 100vh;
+        
+    }
+
+    #main-doc{
+        margin-left: 15rem;
+    }
+
+    
+    
+}
+
